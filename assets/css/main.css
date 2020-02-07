@@ -109,6 +109,10 @@ template { display: none; }
 /** Add the correct display in IE 10. */
 [hidden] { display: none; }
 
+.card { background-color: green; padding: 5px; border-radius: 15px; }
+
+header a { color: green; text-decoration: none; }
+
 code { font-family: "Ubuntu Mono", monospace; }
 
 body { background: black; color: white; font-family: "Ubuntu Mono", monospace; }

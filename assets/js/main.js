@@ -1,6 +1,7 @@
 $(document).ready(function(){
 	
     if ( $.cookie('body-theme') == null ) {
+       $(".goNigth").toggle()
        $.cookie('body-theme', 'nigth', { expires: 7, path: '/' });
        // $.cookie('body-theme'); // => "value" 
        // $.removeCookie('name');
@@ -14,7 +15,6 @@ $(document).ready(function(){
     	$(".skin").toggleClass('day');
     }
     else {
-       alert("ok");
     }
 
 	$(".goDay").click(function(){
@@ -24,7 +24,7 @@ $(document).ready(function(){
         $.cookie('body-theme', 'day', { expires: 7, path: '/' });
 	});
 
-    $(".goNigth").click(function(){
+  $(".goNigth").click(function(){
 		$(".goNigth").toggle()
 		$(".goDay").toggle()
         $(".skin").toggleClass('day');
@@ -32,10 +32,10 @@ $(document).ready(function(){
 	});
 
 
-	$(".go").fadeOut(1500)
-	$(".go").fadeIn(400)
-	$(".go").fadeOut(1000)
-	$(".go").fadeIn(400)
+	// $(".go").fadeOut(1500)
+	// $(".go").fadeIn(400)
+	// $(".go").fadeOut(1000)
+	// $(".go").fadeIn(400)
 
 
 
